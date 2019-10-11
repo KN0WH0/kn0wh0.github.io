@@ -73,9 +73,9 @@
       <category term="自然语言处理" scheme="http://yoursite.com/categories/%E5%BC%80%E6%BA%90%E5%AE%9E%E7%8E%B0/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
     
     
-      <category term="pytorch" scheme="http://yoursite.com/tags/pytorch/"/>
-    
       <category term="NER" scheme="http://yoursite.com/tags/NER/"/>
+    
+      <category term="pytorch" scheme="http://yoursite.com/tags/pytorch/"/>
     
   </entry>
   

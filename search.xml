@@ -72,8 +72,8 @@
         <category>自然语言处理</category>
       </categories>
       <tags>
-        <tag>pytorch</tag>
         <tag>NER</tag>
+        <tag>pytorch</tag>
       </tags>
   </entry>
 </search>
