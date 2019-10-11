@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>用NumPy从头构建LSTM</title>
+    <url>/2019/10/11/%E7%94%A8NumPy%E4%BB%8E%E5%A4%B4%E6%9E%84%E5%BB%BALSTM/</url>
+    <content><![CDATA[<p>Repo link: <a href="https://github.com/nicklashansen/rnn_lstm_from_scratch" target="_blank" rel="noopener">rnn_lstm_from_scratch via Nicklas Hansen</a></p>
+<h1 id="How-to-build-RNNs-and-LSTMs-from-scratch"><a href="#How-to-build-RNNs-and-LSTMs-from-scratch" class="headerlink" title="How to build RNNs and LSTMs from scratch"></a>How to build RNNs and LSTMs from scratch</h1><p>Originally developed by me (Nicklas Hansen), Peter Christensen and Alexander Johansen as educational material for the graduate deep learning course at the Technical University of Denmark (DTU). You can access the full course material <a href="https://github.com/DeepLearningDTU/02456-deep-learning-with-PyTorch" target="_blank" rel="noopener">here</a>.</p>
+<hr>
+<p>In this lab we will introduce different ways of learning from sequential data.<br>As an example, we will train a neural network to do language modelling, i.e. predict the next token in a sentence. In the context of natural language processing a token could be a character or a word, but mind you that the concepts introduced here apply to all kinds of sequential data, such as e.g. protein sequences, weather measurements, audio signals or monetary transaction history, just to name a few.</p>
+<p>To really get a grasp of what is going on inside the recurrent neural networks that we are about to teach you, we will carry out a substantial part of this exercise in NumPy rather than PyTorch. Once you get a hold of it, we will proceed to the PyTorch implementation.</p>
+<p>In this notebook we will show you:</p>
+<ul>
+<li>How to represent categorical variables in networks</li>
+<li>How to build a recurrent neural network (RNN) from scratch</li>
+<li>How to build a LSTM network from scratch</li>
+<li>How to build a LSTM network in PyTorch</li>
+</ul>
+<h2 id="Dataset"><a href="#Dataset" class="headerlink" title="Dataset"></a>Dataset</h2><p>For this exercise we will create a simple dataset that we can learn from. We generate sequences of the form:</p>
+<p><code>a a a a b b b b EOS</code>, <code>a a b b EOS</code>, <code>a a a a a b b b b b EOS</code></p>
+<p>where <code>EOS</code> is a special character denoting the end of a sequence. The task is to predict the next token $t<em>n$, i.e. <code>a</code>, <code>b</code>, <code>EOS</code> or the unknown token <code>UNK</code> given the sequence of tokens ${ t</em>{1}, t<em>{2}, \dots , t</em>{n-1}}$ and we are to process sequences in a sequential manner. As such, the network will need to learn that e.g. 5 <code>b</code>s and an <code>EOS</code> token will occur following 5 <code>a</code>s.</p>
+]]></content>
+      <categories>
+        <category>开源实现</category>
+        <category>自然语言处理</category>
+      </categories>
+      <tags>
+        <tag>pytorch</tag>
+        <tag>numpy</tag>
+        <tag>Language Model</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>BiLSTM+CRF-命名实体识别-PyTorch</title>
+    <url>/2019/10/11/BiLSTM-CRF-%E5%91%BD%E5%90%8D%E5%AE%9E%E4%BD%93%E8%AF%86%E5%88%AB-PyTorch/</url>
+    <content><![CDATA[<p>Repo link: <a href="https://github.com/keep-steady/NER_pytorch" target="_blank" rel="noopener">NER_pytorch via keep-steady</a></p>
+<h1 id="NER-pytorch"><a href="#NER-pytorch" class="headerlink" title="NER_pytorch"></a>NER_pytorch</h1><p>Named Entity Recognition on CoNLL dataset using BiLSTM+CRF implemented with Pytorch</p>
+<p>paper</p>
+<ul>
+<li><p>Neural Architectures for Named Entity Recognition</p>
+</li>
+<li><p>End-to-End Sequence labeling via BLSTM-CNN-CRF</p>
+</li>
+</ul>
+<p>code</p>
+<ul>
+<li><a href="https://github.com/ZhixiuYe/NER-pytorch" target="_blank" rel="noopener">https://github.com/ZhixiuYe/NER-pytorch</a></li>
+</ul>
+<p>This code is customized so that i use latest Pytorch version(1.1.0) starting with <a href="https://github.com/ZhixiuYe/NER-pytorch" target="_blank" rel="noopener">https://github.com/ZhixiuYe/NER-pytorch</a></p>
+<p>To use jupyter notebook to visualize the result, i transform ~.py into .ipynb</p>
+<p>The f1 score performane of test CoNLL data is 91.3%</p>
+<h2 id="Conll-performance"><a href="#Conll-performance" class="headerlink" title="Conll performance"></a>Conll performance</h2><p>   f1 91.3%</p>
+<h2 id="0-prepare-data"><a href="#0-prepare-data" class="headerlink" title="0. prepare data"></a>0. prepare data</h2><p>To get pre-trained word embedding vector Glove</p>
+<p>   run prepare_data.ipynb</p>
+<h2 id="1-train"><a href="#1-train" class="headerlink" title="1. train"></a>1. train</h2><p>150 epoch is enough, 24h with oneP100 GPU, 51 epoch has best f1 score, i use visdom</p>
+<h3 id="model-shape"><a href="#model-shape" class="headerlink" title="model shape"></a>model shape</h3><p>1) word embedding with Glove(100d) + charactor embedding with CNN(25d)<br>2) BiLSTM 1 layer + Highway<br>3) Linear 400d -&gt; 19d with tanh</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">BiLSTM_CRF(</span><br><span class="line">          (char_embeds): Embedding(85, 25)</span><br><span class="line">          (char_cnn3): Conv2d(1, 25, kernel_size=(3, 25), stride=(1, 1), padding=(2, 0))</span><br><span class="line">          (word_embeds): Embedding(400176, 100)</span><br><span class="line">          (dropout): Dropout(p=0.5)</span><br><span class="line">          (lstm): LSTM(125, 200, bidirectional=True)</span><br><span class="line">          (hw_trans): Linear(in_features=25, out_features=25, bias=True)</span><br><span class="line">          (hw_gate): Linear(in_features=25, out_features=25, bias=True)</span><br><span class="line">          (h2_h1): Linear(in_features=400, out_features=200, bias=True)</span><br><span class="line">          (tanh): Tanh()</span><br><span class="line">          (hidden2tag): Linear(in_features=400, out_features=19, bias=True)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>   run 1. train.ipynb</p>
+<h2 id="2-evaluation"><a href="#2-evaluation" class="headerlink" title="2. evaluation"></a>2. evaluation</h2><p>   run 2. evaluation.ipynb</p>
+<h2 id="data"><a href="#data" class="headerlink" title="data"></a>data</h2><p><a href="https://www.clips.uantwerpen.be/conll2003/ner/" target="_blank" rel="noopener">https://www.clips.uantwerpen.be/conll2003/ner/</a></p>
+<p>The CoNLL-2003 shared task data files contain four columns separated by a single space. Each word has been put on a separate line and there is an empty line after each sentence. The first item on each line is a word, the second a part-of-speech (POS) tag, the third a syntactic chunk tag and the fourth the named entity tag. The chunk tags and the named entity tags have the format I-TYPE which means that the word is inside a phrase of type TYPE. Only if two phrases of the same type immediately follow each other, the first word of the second phrase will have tag B-TYPE to show that it starts a new phrase. A word with tag O is not part of a phrase. Here is an example:</p>
+<pre><code>    word     | POS | Syntatic chunk tag | named entity tag
+    U.N.       NNP   I-NP                 I-ORG 
+    official   NN    I-NP                 O 
+    Ekeus      NNP   I-NP                 I-PER 
+    heads      VBZ   I-VP                 O 
+    for        IN    I-PP                 O 
+    Baghdad    NNP   I-NP                 I-LOC 
+    .          .     O                    O 
+</code></pre>]]></content>
+      <categories>
+        <category>开源实现</category>
+        <category>自然语言处理</category>
+      </categories>
+      <tags>
+        <tag>pytorch</tag>
+        <tag>NER</tag>
+      </tags>
+  </entry>
+</search>
