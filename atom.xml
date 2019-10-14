@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-11T03:44:24.713Z</updated>
+  <updated>2019-10-14T06:38:46.616Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>利用油猴批量删除微博</title>
+    <link href="http://yoursite.com/2019/10/14/%E5%88%A9%E7%94%A8%E6%B2%B9%E7%8C%B4%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4%E5%BE%AE%E5%8D%9A/"/>
+    <id>http://yoursite.com/2019/10/14/利用油猴批量删除微博/</id>
+    <published>2019-10-14T05:58:36.000Z</published>
+    <updated>2019-10-14T06:38:46.616Z</updated>
+    
+    <content type="html"><![CDATA[<p>由于微博并未开放批量删除微博的功能，故利用<a href="https://zh.wikipedia.org/wiki/Greasemonkey" target="_blank" rel="noopener">油猴</a>再个人微博页面上执行简单的逐条删除页面中的微博的脚本。即将下列代码配置到油猴插件中。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">'use strict'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> s = <span class="built_in">document</span>.createElement(<span class="string">"script"</span>);</span><br><span class="line">s.setAttribute(<span class="string">"src"</span>,<span class="string">"https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"</span>);</span><br><span class="line">s.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="comment">//微博一页手动刷新默认加载上线40条微博</span></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt;= <span class="number">40</span>; i++)&#123;</span><br><span class="line">    <span class="comment">//800ms执行一次，再小的话出错率大大增加，甚至报错</span></span><br><span class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      $(<span class="string">'a[action-type="fl_menu"]'</span>)[<span class="number">0</span>].click();</span><br><span class="line">      $(<span class="string">'a[title="删除此条微博"]'</span>)[<span class="number">0</span>].click();</span><br><span class="line">      $(<span class="string">'a[action-type="ok"]'</span>)[<span class="number">0</span>].click();</span><br><span class="line">    &#125;, <span class="number">800</span>*i); </span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">document</span>.head.appendChild(s);</span><br></pre></td></tr></table></figure><img src="/2019/10/14/利用油猴批量删除微博/greasymonkey.jpg" title="配置页面"><p>编辑过程中应注意配置正确的匹配URL，即 <em>@match</em> 字段，应与个人微博页面的URL保持一致。脚本编辑完成后使用 <strong>ctrl + s</strong> 保存。</p><img src="/2019/10/14/利用油猴批量删除微博/管理面板.jpg" title="油猴管理面板"><p>然后再油猴的管理面版将该脚本的状态切换为<strong>启用</strong>。然后回到个人微博页面刷新页面即可开始执行批量删除操作。欲停止执行，可关闭该页面或停用油猴再重新加载页面即可。</p><img src="/2019/10/14/利用油猴批量删除微博/deleting.gif" title="删除中">]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;由于微博并未开放批量删除微博的功能，故利用&lt;a href=&quot;https://zh.wikipedia.org/wiki/Greasemonkey&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;油猴&lt;/a&gt;再个人微博页面上执行简单的逐条删除页面中的微博的脚本
+      
+    
+    </summary>
+    
+    
+      <category term="实用技巧" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="GreaseMonkey" scheme="http://yoursite.com/tags/GreaseMonkey/"/>
+    
+  </entry>
+  
+  <entry>
     <title>用NumPy从头构建LSTM</title>
     <link href="http://yoursite.com/2019/10/11/%E7%94%A8NumPy%E4%BB%8E%E5%A4%B4%E6%9E%84%E5%BB%BALSTM/"/>
     <id>http://yoursite.com/2019/10/11/用NumPy从头构建LSTM/</id>
     <published>2019-10-11T03:38:43.000Z</published>
-    <updated>2019-10-11T03:44:24.713Z</updated>
+    <updated>2019-10-14T06:38:45.484Z</updated>
     
     <content type="html"><![CDATA[<p>Repo link: <a href="https://github.com/nicklashansen/rnn_lstm_from_scratch" target="_blank" rel="noopener">rnn_lstm_from_scratch via Nicklas Hansen</a></p><h1 id="How-to-build-RNNs-and-LSTMs-from-scratch"><a href="#How-to-build-RNNs-and-LSTMs-from-scratch" class="headerlink" title="How to build RNNs and LSTMs from scratch"></a>How to build RNNs and LSTMs from scratch</h1><p>Originally developed by me (Nicklas Hansen), Peter Christensen and Alexander Johansen as educational material for the graduate deep learning course at the Technical University of Denmark (DTU). You can access the full course material <a href="https://github.com/DeepLearningDTU/02456-deep-learning-with-PyTorch" target="_blank" rel="noopener">here</a>.</p><hr><p>In this lab we will introduce different ways of learning from sequential data.<br>As an example, we will train a neural network to do language modelling, i.e. predict the next token in a sentence. In the context of natural language processing a token could be a character or a word, but mind you that the concepts introduced here apply to all kinds of sequential data, such as e.g. protein sequences, weather measurements, audio signals or monetary transaction history, just to name a few.</p><p>To really get a grasp of what is going on inside the recurrent neural networks that we are about to teach you, we will carry out a substantial part of this exercise in NumPy rather than PyTorch. Once you get a hold of it, we will proceed to the PyTorch implementation.</p><p>In this notebook we will show you:</p><ul><li>How to represent categorical variables in networks</li><li>How to build a recurrent neural network (RNN) from scratch</li><li>How to build a LSTM network from scratch</li><li>How to build a LSTM network in PyTorch</li></ul><h2 id="Dataset"><a href="#Dataset" class="headerlink" title="Dataset"></a>Dataset</h2><p>For this exercise we will create a simple dataset that we can learn from. We generate sequences of the form:</p><p><code>a a a a b b b b EOS</code>, <code>a a b b EOS</code>, <code>a a a a a b b b b b EOS</code></p><p>where <code>EOS</code> is a special character denoting the end of a sequence. The task is to predict the next token $t<em>n$, i.e. <code>a</code>, <code>b</code>, <code>EOS</code> or the unknown token <code>UNK</code> given the sequence of tokens ${ t</em>{1}, t<em>{2}, \dots , t</em>{n-1}}$ and we are to process sequences in a sequential manner. As such, the network will need to learn that e.g. 5 <code>b</code>s and an <code>EOS</code> token will occur following 5 <code>a</code>s.</p>]]></content>
     
@@ -37,7 +63,7 @@
     
       <category term="开源实现" scheme="http://yoursite.com/categories/%E5%BC%80%E6%BA%90%E5%AE%9E%E7%8E%B0/"/>
     
-      <category term="自然语言处理" scheme="http://yoursite.com/categories/%E5%BC%80%E6%BA%90%E5%AE%9E%E7%8E%B0/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
+      <category term="自然语言处理" scheme="http://yoursite.com/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
     
     
       <category term="pytorch" scheme="http://yoursite.com/tags/pytorch/"/>
@@ -53,7 +79,7 @@
     <link href="http://yoursite.com/2019/10/11/BiLSTM-CRF-%E5%91%BD%E5%90%8D%E5%AE%9E%E4%BD%93%E8%AF%86%E5%88%AB-PyTorch/"/>
     <id>http://yoursite.com/2019/10/11/BiLSTM-CRF-命名实体识别-PyTorch/</id>
     <published>2019-10-11T03:11:40.000Z</published>
-    <updated>2019-10-11T03:44:28.296Z</updated>
+    <updated>2019-10-14T06:38:48.457Z</updated>
     
     <content type="html"><![CDATA[<p>Repo link: <a href="https://github.com/keep-steady/NER_pytorch" target="_blank" rel="noopener">NER_pytorch via keep-steady</a></p><h1 id="NER-pytorch"><a href="#NER-pytorch" class="headerlink" title="NER_pytorch"></a>NER_pytorch</h1><p>Named Entity Recognition on CoNLL dataset using BiLSTM+CRF implemented with Pytorch</p><p>paper</p><ul><li><p>Neural Architectures for Named Entity Recognition</p></li><li><p>End-to-End Sequence labeling via BLSTM-CNN-CRF</p></li></ul><p>code</p><ul><li><a href="https://github.com/ZhixiuYe/NER-pytorch" target="_blank" rel="noopener">https://github.com/ZhixiuYe/NER-pytorch</a></li></ul><p>This code is customized so that i use latest Pytorch version(1.1.0) starting with <a href="https://github.com/ZhixiuYe/NER-pytorch" target="_blank" rel="noopener">https://github.com/ZhixiuYe/NER-pytorch</a></p><p>To use jupyter notebook to visualize the result, i transform ~.py into .ipynb</p><p>The f1 score performane of test CoNLL data is 91.3%</p><h2 id="Conll-performance"><a href="#Conll-performance" class="headerlink" title="Conll performance"></a>Conll performance</h2><p>   f1 91.3%</p><h2 id="0-prepare-data"><a href="#0-prepare-data" class="headerlink" title="0. prepare data"></a>0. prepare data</h2><p>To get pre-trained word embedding vector Glove</p><p>   run prepare_data.ipynb</p><h2 id="1-train"><a href="#1-train" class="headerlink" title="1. train"></a>1. train</h2><p>150 epoch is enough, 24h with oneP100 GPU, 51 epoch has best f1 score, i use visdom</p><h3 id="model-shape"><a href="#model-shape" class="headerlink" title="model shape"></a>model shape</h3><p>1) word embedding with Glove(100d) + charactor embedding with CNN(25d)<br>2) BiLSTM 1 layer + Highway<br>3) Linear 400d -&gt; 19d with tanh</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">BiLSTM_CRF(</span><br><span class="line">          (char_embeds): Embedding(85, 25)</span><br><span class="line">          (char_cnn3): Conv2d(1, 25, kernel_size=(3, 25), stride=(1, 1), padding=(2, 0))</span><br><span class="line">          (word_embeds): Embedding(400176, 100)</span><br><span class="line">          (dropout): Dropout(p=0.5)</span><br><span class="line">          (lstm): LSTM(125, 200, bidirectional=True)</span><br><span class="line">          (hw_trans): Linear(in_features=25, out_features=25, bias=True)</span><br><span class="line">          (hw_gate): Linear(in_features=25, out_features=25, bias=True)</span><br><span class="line">          (h2_h1): Linear(in_features=400, out_features=200, bias=True)</span><br><span class="line">          (tanh): Tanh()</span><br><span class="line">          (hidden2tag): Linear(in_features=400, out_features=19, bias=True)</span><br><span class="line">)</span><br></pre></td></tr></table></figure><p>   run 1. train.ipynb</p><h2 id="2-evaluation"><a href="#2-evaluation" class="headerlink" title="2. evaluation"></a>2. evaluation</h2><p>   run 2. evaluation.ipynb</p><h2 id="data"><a href="#data" class="headerlink" title="data"></a>data</h2><p><a href="https://www.clips.uantwerpen.be/conll2003/ner/" target="_blank" rel="noopener">https://www.clips.uantwerpen.be/conll2003/ner/</a></p><p>The CoNLL-2003 shared task data files contain four columns separated by a single space. Each word has been put on a separate line and there is an empty line after each sentence. The first item on each line is a word, the second a part-of-speech (POS) tag, the third a syntactic chunk tag and the fourth the named entity tag. The chunk tags and the named entity tags have the format I-TYPE which means that the word is inside a phrase of type TYPE. Only if two phrases of the same type immediately follow each other, the first word of the second phrase will have tag B-TYPE to show that it starts a new phrase. A word with tag O is not part of a phrase. Here is an example:</p><pre><code>    word     | POS | Syntatic chunk tag | named entity tag    U.N.       NNP   I-NP                 I-ORG     official   NN    I-NP                 O     Ekeus      NNP   I-NP                 I-PER     heads      VBZ   I-VP                 O     for        IN    I-PP                 O     Baghdad    NNP   I-NP                 I-LOC     .          .     O                    O </code></pre>]]></content>
     
@@ -70,7 +96,7 @@
     
       <category term="开源实现" scheme="http://yoursite.com/categories/%E5%BC%80%E6%BA%90%E5%AE%9E%E7%8E%B0/"/>
     
-      <category term="自然语言处理" scheme="http://yoursite.com/categories/%E5%BC%80%E6%BA%90%E5%AE%9E%E7%8E%B0/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
+      <category term="自然语言处理" scheme="http://yoursite.com/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
     
     
       <category term="NER" scheme="http://yoursite.com/tags/NER/"/>
