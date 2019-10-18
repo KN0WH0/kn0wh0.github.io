@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>支持GitHub同步的Markdown网页版笔记应用</title>
+    <url>/2019/10/18/%E6%94%AF%E6%8C%81GitHub%E5%90%8C%E6%AD%A5%E7%9A%84Markdown%E7%BD%91%E9%A1%B5%E7%89%88%E7%AC%94%E8%AE%B0%E5%BA%94%E7%94%A8/</url>
+    <content><![CDATA[<p>Repo link: <a href="https://github.com/taniarascia/takenote" target="_blank" rel="noopener">takenote via taniarascia</a></p>
+<p>【takenote：支持GitHub同步的Markdown网页版笔记应用】</p>
+<img src="/2019/10/18/支持GitHub同步的Markdown网页版笔记应用/takenote.png" title="README">]]></content>
+      <categories>
+        <category>实用技巧与工具</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>追一科技首届中文NL2SQL挑战赛决赛第3名方案+代码</title>
+    <url>/2019/10/18/%E8%BF%BD%E4%B8%80%E7%A7%91%E6%8A%80%E9%A6%96%E5%B1%8A%E4%B8%AD%E6%96%87NL2SQL%E6%8C%91%E6%88%98%E8%B5%9B%E5%86%B3%E8%B5%9B%E7%AC%AC3%E5%90%8D%E6%96%B9%E6%A1%88-%E4%BB%A3%E7%A0%81/</url>
+    <content><![CDATA[<p>Repo link: <a href="https://github.com/beader/tianchi_nl2sql" target="_blank" rel="noopener">tianchi_nl2sql via beader</a></p>
+<img src="/2019/10/18/追一科技首届中文NL2SQL挑战赛决赛第3名方案-代码/githubcom_beader_tianchi_nl2sql.jpg" title="README">]]></content>
+      <categories>
+        <category>竞赛解决方案</category>
+        <category>自然语言处理</category>
+      </categories>
+      <tags>
+        <tag>NL2SQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>利用油猴批量删除微博</title>
     <url>/2019/10/14/%E5%88%A9%E7%94%A8%E6%B2%B9%E7%8C%B4%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4%E5%BE%AE%E5%8D%9A/</url>
     <content><![CDATA[<p>由于微博并未开放批量删除微博的功能，故利用<a href="https://zh.wikipedia.org/wiki/Greasemonkey" target="_blank" rel="noopener">油猴</a>再个人微博页面上执行简单的逐条删除页面中的微博的脚本。即将下列代码配置到油猴插件中。</p>
@@ -11,7 +37,7 @@
 <p>然后再油猴的管理面版将该脚本的状态切换为<strong>启用</strong>。然后回到个人微博页面刷新页面即可开始执行批量删除操作。欲停止执行，可关闭该页面或停用油猴再重新加载页面即可。</p>
 <img src="/2019/10/14/利用油猴批量删除微博/deleting.gif" title="删除中">]]></content>
       <categories>
-        <category>实用技巧</category>
+        <category>实用技巧与工具</category>
       </categories>
       <tags>
         <tag>GreaseMonkey</tag>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-14T06:38:46.616Z</updated>
+  <updated>2019-10-18T07:08:14.864Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,67 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>支持GitHub同步的Markdown网页版笔记应用</title>
+    <link href="http://yoursite.com/2019/10/18/%E6%94%AF%E6%8C%81GitHub%E5%90%8C%E6%AD%A5%E7%9A%84Markdown%E7%BD%91%E9%A1%B5%E7%89%88%E7%AC%94%E8%AE%B0%E5%BA%94%E7%94%A8/"/>
+    <id>http://yoursite.com/2019/10/18/支持GitHub同步的Markdown网页版笔记应用/</id>
+    <published>2019-10-18T07:04:03.000Z</published>
+    <updated>2019-10-18T07:08:14.864Z</updated>
+    
+    <content type="html"><![CDATA[<p>Repo link: <a href="https://github.com/taniarascia/takenote" target="_blank" rel="noopener">takenote via taniarascia</a></p><p>【takenote：支持GitHub同步的Markdown网页版笔记应用】</p><img src="/2019/10/18/支持GitHub同步的Markdown网页版笔记应用/takenote.png" title="README">]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Repo link: &lt;a href=&quot;https://github.com/taniarascia/takenote&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;takenote via taniarascia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;【takenote
+      
+    
+    </summary>
+    
+    
+      <category term="实用技巧与工具" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%E4%B8%8E%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>追一科技首届中文NL2SQL挑战赛决赛第3名方案+代码</title>
+    <link href="http://yoursite.com/2019/10/18/%E8%BF%BD%E4%B8%80%E7%A7%91%E6%8A%80%E9%A6%96%E5%B1%8A%E4%B8%AD%E6%96%87NL2SQL%E6%8C%91%E6%88%98%E8%B5%9B%E5%86%B3%E8%B5%9B%E7%AC%AC3%E5%90%8D%E6%96%B9%E6%A1%88-%E4%BB%A3%E7%A0%81/"/>
+    <id>http://yoursite.com/2019/10/18/追一科技首届中文NL2SQL挑战赛决赛第3名方案-代码/</id>
+    <published>2019-10-18T04:02:40.000Z</published>
+    <updated>2019-10-18T04:05:35.960Z</updated>
+    
+    <content type="html"><![CDATA[<p>Repo link: <a href="https://github.com/beader/tianchi_nl2sql" target="_blank" rel="noopener">tianchi_nl2sql via beader</a></p><img src="/2019/10/18/追一科技首届中文NL2SQL挑战赛决赛第3名方案-代码/githubcom_beader_tianchi_nl2sql.jpg" title="README">]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Repo link: &lt;a href=&quot;https://github.com/beader/tianchi_nl2sql&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;tianchi_nl2sql via beader&lt;/a&gt;&lt;/p&gt;
+&lt;img src=&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="竞赛解决方案" scheme="http://yoursite.com/categories/%E7%AB%9E%E8%B5%9B%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    
+      <category term="自然语言处理" scheme="http://yoursite.com/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
+    
+    
+      <category term="NL2SQL" scheme="http://yoursite.com/tags/NL2SQL/"/>
+    
+  </entry>
+  
+  <entry>
     <title>利用油猴批量删除微博</title>
     <link href="http://yoursite.com/2019/10/14/%E5%88%A9%E7%94%A8%E6%B2%B9%E7%8C%B4%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4%E5%BE%AE%E5%8D%9A/"/>
     <id>http://yoursite.com/2019/10/14/利用油猴批量删除微博/</id>
     <published>2019-10-14T05:58:36.000Z</published>
-    <updated>2019-10-14T06:38:46.616Z</updated>
+    <updated>2019-10-18T07:01:52.310Z</updated>
     
     <content type="html"><![CDATA[<p>由于微博并未开放批量删除微博的功能，故利用<a href="https://zh.wikipedia.org/wiki/Greasemonkey" target="_blank" rel="noopener">油猴</a>再个人微博页面上执行简单的逐条删除页面中的微博的脚本。即将下列代码配置到油猴插件中。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">'use strict'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> s = <span class="built_in">document</span>.createElement(<span class="string">"script"</span>);</span><br><span class="line">s.setAttribute(<span class="string">"src"</span>,<span class="string">"https://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"</span>);</span><br><span class="line">s.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="comment">//微博一页手动刷新默认加载上线40条微博</span></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt;= <span class="number">40</span>; i++)&#123;</span><br><span class="line">    <span class="comment">//800ms执行一次，再小的话出错率大大增加，甚至报错</span></span><br><span class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      $(<span class="string">'a[action-type="fl_menu"]'</span>)[<span class="number">0</span>].click();</span><br><span class="line">      $(<span class="string">'a[title="删除此条微博"]'</span>)[<span class="number">0</span>].click();</span><br><span class="line">      $(<span class="string">'a[action-type="ok"]'</span>)[<span class="number">0</span>].click();</span><br><span class="line">    &#125;, <span class="number">800</span>*i); </span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">document</span>.head.appendChild(s);</span><br></pre></td></tr></table></figure><img src="/2019/10/14/利用油猴批量删除微博/greasymonkey.jpg" title="配置页面"><p>编辑过程中应注意配置正确的匹配URL，即 <em>@match</em> 字段，应与个人微博页面的URL保持一致。脚本编辑完成后使用 <strong>ctrl + s</strong> 保存。</p><img src="/2019/10/14/利用油猴批量删除微博/管理面板.jpg" title="油猴管理面板"><p>然后再油猴的管理面版将该脚本的状态切换为<strong>启用</strong>。然后回到个人微博页面刷新页面即可开始执行批量删除操作。欲停止执行，可关闭该页面或停用油猴再重新加载页面即可。</p><img src="/2019/10/14/利用油猴批量删除微博/deleting.gif" title="删除中">]]></content>
     
@@ -35,7 +91,7 @@
     </summary>
     
     
-      <category term="实用技巧" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+      <category term="实用技巧与工具" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%E4%B8%8E%E5%B7%A5%E5%85%B7/"/>
     
     
       <category term="GreaseMonkey" scheme="http://yoursite.com/tags/GreaseMonkey/"/>
