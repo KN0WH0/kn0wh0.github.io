@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-18T07:08:14.864Z</updated>
+  <updated>2019-10-18T07:41:51.148Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Bash-Oneliner：超实用的单行Bash命令技巧汇总</title>
+    <link href="http://yoursite.com/2019/10/18/Bash-Oneliner%EF%BC%9A%E8%B6%85%E5%AE%9E%E7%94%A8%E7%9A%84%E5%8D%95%E8%A1%8CBash%E5%91%BD%E4%BB%A4%E6%8A%80%E5%B7%A7%E6%B1%87%E6%80%BB/"/>
+    <id>http://yoursite.com/2019/10/18/Bash-Oneliner：超实用的单行Bash命令技巧汇总/</id>
+    <published>2019-10-18T07:39:29.000Z</published>
+    <updated>2019-10-18T07:41:51.148Z</updated>
+    
+    <content type="html"><![CDATA[<p>Bash-Oneliner：超实用的单行Bash命令技巧汇总</p><p>Repo link: <a href="https://onceupon.github.io/Bash-Oneliner" target="_blank" rel="noopener"><strong>Bash-Oneliner</strong> via Bonnie I-Man Ng</a></p><img src="/2019/10/18/Bash-Oneliner：超实用的单行Bash命令技巧汇总/bash-oneliner.png" title="bash-oneliner">]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Bash-Oneliner：超实用的单行Bash命令技巧汇总&lt;/p&gt;
+&lt;p&gt;Repo link: &lt;a href=&quot;https://onceupon.github.io/Bash-Oneliner&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;stron
+      
+    
+    </summary>
+    
+    
+      <category term="实用技巧与工具" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%E4%B8%8E%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+      <category term="Bash" scheme="http://yoursite.com/tags/Bash/"/>
+    
+  </entry>
   
   <entry>
     <title>支持GitHub同步的Markdown网页版笔记应用</title>
@@ -63,9 +92,9 @@
     </summary>
     
     
-      <category term="竞赛解决方案" scheme="http://yoursite.com/categories/%E7%AB%9E%E8%B5%9B%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
-    
       <category term="自然语言处理" scheme="http://yoursite.com/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
+    
+      <category term="竞赛解决方案" scheme="http://yoursite.com/categories/%E7%AB%9E%E8%B5%9B%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
     
     
       <category term="NL2SQL" scheme="http://yoursite.com/tags/NL2SQL/"/>
@@ -155,9 +184,9 @@
       <category term="自然语言处理" scheme="http://yoursite.com/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
     
     
-      <category term="NER" scheme="http://yoursite.com/tags/NER/"/>
-    
       <category term="pytorch" scheme="http://yoursite.com/tags/pytorch/"/>
+    
+      <category term="NER" scheme="http://yoursite.com/tags/NER/"/>
     
   </entry>
   

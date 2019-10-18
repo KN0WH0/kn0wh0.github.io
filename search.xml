@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Bash-Oneliner：超实用的单行Bash命令技巧汇总</title>
+    <url>/2019/10/18/Bash-Oneliner%EF%BC%9A%E8%B6%85%E5%AE%9E%E7%94%A8%E7%9A%84%E5%8D%95%E8%A1%8CBash%E5%91%BD%E4%BB%A4%E6%8A%80%E5%B7%A7%E6%B1%87%E6%80%BB/</url>
+    <content><![CDATA[<p>Bash-Oneliner：超实用的单行Bash命令技巧汇总</p>
+<p>Repo link: <a href="https://onceupon.github.io/Bash-Oneliner" target="_blank" rel="noopener"><strong>Bash-Oneliner</strong> via Bonnie I-Man Ng</a></p>
+<img src="/2019/10/18/Bash-Oneliner：超实用的单行Bash命令技巧汇总/bash-oneliner.png" title="bash-oneliner">]]></content>
+      <categories>
+        <category>实用技巧与工具</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Bash</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>支持GitHub同步的Markdown网页版笔记应用</title>
     <url>/2019/10/18/%E6%94%AF%E6%8C%81GitHub%E5%90%8C%E6%AD%A5%E7%9A%84Markdown%E7%BD%91%E9%A1%B5%E7%89%88%E7%AC%94%E8%AE%B0%E5%BA%94%E7%94%A8/</url>
     <content><![CDATA[<p>Repo link: <a href="https://github.com/taniarascia/takenote" target="_blank" rel="noopener">takenote via taniarascia</a></p>
@@ -19,8 +33,8 @@
     <content><![CDATA[<p>Repo link: <a href="https://github.com/beader/tianchi_nl2sql" target="_blank" rel="noopener">tianchi_nl2sql via beader</a></p>
 <img src="/2019/10/18/追一科技首届中文NL2SQL挑战赛决赛第3名方案-代码/githubcom_beader_tianchi_nl2sql.jpg" title="README">]]></content>
       <categories>
-        <category>竞赛解决方案</category>
         <category>自然语言处理</category>
+        <category>竞赛解决方案</category>
       </categories>
       <tags>
         <tag>NL2SQL</tag>
@@ -115,8 +129,8 @@
         <category>自然语言处理</category>
       </categories>
       <tags>
-        <tag>NER</tag>
         <tag>pytorch</tag>
+        <tag>NER</tag>
       </tags>
   </entry>
 </search>
