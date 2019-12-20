@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-18T07:41:51.148Z</updated>
+  <updated>2019-12-20T16:52:04.834Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>纪念币预约辅助脚本</title>
+    <link href="http://yoursite.com/2019/12/21/%E7%BA%AA%E5%BF%B5%E5%B8%81%E9%A2%84%E7%BA%A6%E8%BE%85%E5%8A%A9%E8%84%9A%E6%9C%AC/"/>
+    <id>http://yoursite.com/2019/12/21/纪念币预约辅助脚本/</id>
+    <published>2019-12-20T16:27:49.000Z</published>
+    <updated>2019-12-20T16:52:04.834Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h1><p><a href="https://github.com/GhibliField/CommemorativeCoin-Assistant" target="_blank" rel="noopener">CommemorativeCoin-Assistant</a> is a repository of some assistants helping subscribe commemorative coins through banks’ websites. Those script can help speed up the subscribing process, especially can automatically fill up some necessary information, including name, phone number and ID card number.</p><h1 id="Files"><a href="#Files" class="headerlink" title="Files"></a>Files</h1><p>├── BankofChina.js: script for <strong>Bank of China</strong> (AKA: BOC)<br>├── ChinaConstructionBank.js: script for <strong>China Construction Bank</strong> (AKA: CCB)<br>└── README.md: specialization  </p><h1 id="Environment"><a href="#Environment" class="headerlink" title="Environment"></a>Environment</h1><ul><li><strong>Google Chrome</strong> or <strong>Firefox</strong></li><li><strong>TamperMonkey</strong> (for running on CCB’s website)</li></ul><h1 id="HOW-TO"><a href="#HOW-TO" class="headerlink" title="HOW-TO"></a>HOW-TO</h1><h2 id="CCB"><a href="#CCB" class="headerlink" title="CCB"></a>CCB</h2><ol><li><p>Edit <code>ChinaConstructionBank.js</code>, replace example info to subscribers’ information and modify the exchange date.  </p></li><li><p>Create a script in TamperMonkey and paste the edited copy to it.  </p></li><li><p>Browse the CCB’s subscription website and the script will run .  </p></li><li><p>You can click the name on the right and his/her credential number and mobile number will be inserted to the corresponding widgets automatically.  </p><img src="/2019/12/21/纪念币预约辅助脚本/ccb_site.jpg" title="ccb website"></li></ol><h2 id="BOC"><a href="#BOC" class="headerlink" title="BOC"></a>BOC</h2><ol><li><p>Edit <code>BankofChina.js</code>, replace example info to subscribers’ information, and then arrange all the codes in one line only.  </p></li><li><p>Open Chrome or Firefox, create a bookmark(page) on the bookmarks bar, place the one-lined script to <code>URL</code>(Chrome) or <code>Location</code>(Firefox) and save.  </p><img src="/2019/12/21/纪念币预约辅助脚本/chrome.jpg" title="Add Chrome Bookmark"><img src="/2019/12/21/纪念币预约辅助脚本/firefox.jpg" title="Add Firefox Bookmark"></li><li><p>Browse the BOC’s subscription website and click the bookmark button on the bookmarks bar. And …  </p></li><li><p>You can click the name on the right and his/her credential number and mobile number will be inserted to the corresponding widgets automatically.</p><img src="/2019/12/21/纪念币预约辅助脚本/boc_site.jpg" title="BOC website"></li></ol><p><strong>Attention: According to the risk control rules, you’d better not to use ONE phone number for subscriptions more than 5 times.</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/Ghibli
+      
+    
+    </summary>
+    
+    
+      <category term="实用技巧与工具" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%E4%B8%8E%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="GreaseMonkey" scheme="http://yoursite.com/tags/GreaseMonkey/"/>
+    
+  </entry>
   
   <entry>
     <title>Bash-Oneliner：超实用的单行Bash命令技巧汇总</title>
@@ -92,9 +118,9 @@
     </summary>
     
     
-      <category term="自然语言处理" scheme="http://yoursite.com/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
-    
       <category term="竞赛解决方案" scheme="http://yoursite.com/categories/%E7%AB%9E%E8%B5%9B%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    
+      <category term="自然语言处理" scheme="http://yoursite.com/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
     
     
       <category term="NL2SQL" scheme="http://yoursite.com/tags/NL2SQL/"/>
@@ -184,9 +210,9 @@
       <category term="自然语言处理" scheme="http://yoursite.com/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
     
     
-      <category term="pytorch" scheme="http://yoursite.com/tags/pytorch/"/>
-    
       <category term="NER" scheme="http://yoursite.com/tags/NER/"/>
+    
+      <category term="pytorch" scheme="http://yoursite.com/tags/pytorch/"/>
     
   </entry>
   

@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>纪念币预约辅助脚本</title>
+    <url>/2019/12/21/%E7%BA%AA%E5%BF%B5%E5%B8%81%E9%A2%84%E7%BA%A6%E8%BE%85%E5%8A%A9%E8%84%9A%E6%9C%AC/</url>
+    <content><![CDATA[<h1 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h1><p><a href="https://github.com/GhibliField/CommemorativeCoin-Assistant" target="_blank" rel="noopener">CommemorativeCoin-Assistant</a> is a repository of some assistants helping subscribe commemorative coins through banks’ websites. Those script can help speed up the subscribing process, especially can automatically fill up some necessary information, including name, phone number and ID card number.</p>
+<h1 id="Files"><a href="#Files" class="headerlink" title="Files"></a>Files</h1><p>├── BankofChina.js: script for <strong>Bank of China</strong> (AKA: BOC)<br>├── ChinaConstructionBank.js: script for <strong>China Construction Bank</strong> (AKA: CCB)<br>└── README.md: specialization  </p>
+<h1 id="Environment"><a href="#Environment" class="headerlink" title="Environment"></a>Environment</h1><ul>
+<li><strong>Google Chrome</strong> or <strong>Firefox</strong></li>
+<li><strong>TamperMonkey</strong> (for running on CCB’s website)</li>
+</ul>
+<h1 id="HOW-TO"><a href="#HOW-TO" class="headerlink" title="HOW-TO"></a>HOW-TO</h1><h2 id="CCB"><a href="#CCB" class="headerlink" title="CCB"></a>CCB</h2><ol>
+<li><p>Edit <code>ChinaConstructionBank.js</code>, replace example info to subscribers’ information and modify the exchange date.  </p>
+</li>
+<li><p>Create a script in TamperMonkey and paste the edited copy to it.  </p>
+</li>
+<li><p>Browse the CCB’s subscription website and the script will run .  </p>
+</li>
+<li><p>You can click the name on the right and his/her credential number and mobile number will be inserted to the corresponding widgets automatically.  </p>
+<img src="/2019/12/21/纪念币预约辅助脚本/ccb_site.jpg" title="ccb website">
+</li>
+</ol>
+<h2 id="BOC"><a href="#BOC" class="headerlink" title="BOC"></a>BOC</h2><ol>
+<li><p>Edit <code>BankofChina.js</code>, replace example info to subscribers’ information, and then arrange all the codes in one line only.  </p>
+</li>
+<li><p>Open Chrome or Firefox, create a bookmark(page) on the bookmarks bar, place the one-lined script to <code>URL</code>(Chrome) or <code>Location</code>(Firefox) and save.  </p>
+<img src="/2019/12/21/纪念币预约辅助脚本/chrome.jpg" title="Add Chrome Bookmark">
+<img src="/2019/12/21/纪念币预约辅助脚本/firefox.jpg" title="Add Firefox Bookmark">
+</li>
+<li><p>Browse the BOC’s subscription website and click the bookmark button on the bookmarks bar. And …  </p>
+</li>
+<li><p>You can click the name on the right and his/her credential number and mobile number will be inserted to the corresponding widgets automatically.</p>
+<img src="/2019/12/21/纪念币预约辅助脚本/boc_site.jpg" title="BOC website">
+</li>
+</ol>
+<p><strong>Attention: According to the risk control rules, you’d better not to use ONE phone number for subscriptions more than 5 times.</strong></p>
+]]></content>
+      <categories>
+        <category>实用技巧与工具</category>
+      </categories>
+      <tags>
+        <tag>GreaseMonkey</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Bash-Oneliner：超实用的单行Bash命令技巧汇总</title>
     <url>/2019/10/18/Bash-Oneliner%EF%BC%9A%E8%B6%85%E5%AE%9E%E7%94%A8%E7%9A%84%E5%8D%95%E8%A1%8CBash%E5%91%BD%E4%BB%A4%E6%8A%80%E5%B7%A7%E6%B1%87%E6%80%BB/</url>
     <content><![CDATA[<p>Bash-Oneliner：超实用的单行Bash命令技巧汇总</p>
@@ -33,8 +75,8 @@
     <content><![CDATA[<p>Repo link: <a href="https://github.com/beader/tianchi_nl2sql" target="_blank" rel="noopener">tianchi_nl2sql via beader</a></p>
 <img src="/2019/10/18/追一科技首届中文NL2SQL挑战赛决赛第3名方案-代码/githubcom_beader_tianchi_nl2sql.jpg" title="README">]]></content>
       <categories>
-        <category>自然语言处理</category>
         <category>竞赛解决方案</category>
+        <category>自然语言处理</category>
       </categories>
       <tags>
         <tag>NL2SQL</tag>
@@ -129,8 +171,8 @@
         <category>自然语言处理</category>
       </categories>
       <tags>
-        <tag>pytorch</tag>
         <tag>NER</tag>
+        <tag>pytorch</tag>
       </tags>
   </entry>
 </search>
